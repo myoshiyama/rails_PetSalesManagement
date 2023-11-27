@@ -1,0 +1,2 @@
+class FatherPet < ApplicationRecord
+end

@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  breeding_period: 1
+  gender: MyString
+  sales_price: 9.99
+  sales_day: 2023-11-27
+  birthday: 2023-11-27
+  weight: 1
+  breeding_memo: MyText
+  image_path: MyText
+  change_parent_cat: MyString
+  customer: one
+  fatherpet: one
+  motherpet: one
+
+two:
+  color: MyString
+  breeding_period: 1
+  gender: MyString
+  sales_price: 9.99
+  sales_day: 2023-11-27
+  birthday: 2023-11-27
+  weight: 1
+  breeding_memo: MyText
+  image_path: MyText
+  change_parent_cat: MyString
+  customer: two
+  fatherpet: two
+  motherpet: two

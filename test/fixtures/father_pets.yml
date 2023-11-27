@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  color: MyString
+  birthday: 2023-11-27
+  image_path: MyText
+  memo: MyString
+
+two:
+  name: MyString
+  color: MyString
+  birthday: 2023-11-27
+  image_path: MyText
+  memo: MyString

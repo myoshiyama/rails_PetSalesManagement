@@ -3,7 +3,7 @@ FROM ruby:3.1
 
 # Install dependencies (Node.js)
 RUN apt-get update -qq && \
-    apt-get install -y nodejs
+    apt-get install -y nodejs default-mysql-client
 
 # Create and set the working directory
 WORKDIR /myapp

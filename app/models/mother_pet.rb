@@ -1,0 +1,2 @@
+class MotherPet < ApplicationRecord
+end
