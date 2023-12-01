@@ -5,6 +5,10 @@ FROM ruby:3.1
 RUN apt-get update -qq && \
     apt-get install -y nodejs default-mysql-client
 
+# Install Node.js
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+
 # Create and set the working directory
 WORKDIR /myapp
 

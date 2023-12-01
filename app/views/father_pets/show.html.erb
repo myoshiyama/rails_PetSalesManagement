@@ -1,0 +1,37 @@
+<h1>父親猫詳細</h1>
+
+<%= link_to '一覧に戻る', father_pets_path, class: 'btn btn-secondary' %>
+<%= link_to '編集', edit_father_pet_path(@father_pet), class: 'btn btn-secondary' %>
+
+<p>
+  <strong>ID:</strong>
+  <%= @father_pet.id %>
+</p>
+<p>
+  <strong>名前:</strong>
+  <%= @father_pet.name %>
+</p>
+<p>
+  <strong>カラー:</strong>
+  <%= @father_pet.color %>
+</p>
+<p>
+  <strong>誕生日:</strong>
+  <%= @father_pet.birthday %>
+</p>
+<p>
+  <strong>写真:</strong>
+  <%= @father_pet.image_path %>
+</p>
+<p>
+  <strong>メモ:</strong>
+  <%= @father_pet.memo %>
+</p>
+<p>
+  <strong>作成日時:</strong>
+  <%= @father_pet.created_at %>
+</p>
+<p>
+  <strong>更新日時:</strong>
+  <%= @father_pet.updated_at %>
+</p>

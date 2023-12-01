@@ -1,0 +1,32 @@
+<h1>父親猫一覧</h1>
+<%= link_to '新規登録', new_father_pet_path, class: 'btn btn-primary' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>写真</th>
+      <th>名前</th>
+      <th>カラー</th>
+      <th>誕生日</th>
+      <th>メモ</th>
+    #   <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @father_pets.each do |father_pet| %>
+      <tr>
+        <td><%= father_pet.image_path %></td>
+        <td><%= father_pet.name %></td>
+        <td><%= father_pet.color %></td>
+        <td><%= father_pet.birthday %></td>
+        <td><%= father_pet.image_path %></td>
+        <td><%= father_pet.memo %></td>
+        <td>
+          <%= link_to '詳細', father_pet %>
+          <%= link_to '編集', edit_father_pet_path(father_pet) %>
+          <%= link_to '削除', father_pet, method: :delete, data: { confirm: '本当に削除していいですか?' } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
