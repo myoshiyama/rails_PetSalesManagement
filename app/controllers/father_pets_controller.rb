@@ -1,10 +1,11 @@
 class FatherPetsController < ApplicationController
+  before_action :set_father_pet, only: [:show, :edit, :update, :destroy]
+
   def index
     @father_pets = FatherPet.all
   end
 
   def show
-    @father_pet = FatherPet.find(params[:id])
   end
 
   def new
@@ -22,10 +23,26 @@ class FatherPetsController < ApplicationController
   end
 
   def edit
-    @father_pet = FatherPet.find(params[:id])
+  end
+
+  def update
+    if @father_pet.update(father_pet_params)
+      redirect_to father_pets_path, notice: '更新完了しました'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @father_pet.destroy
+    redirect_to father_pets_path, notice: '削除完了しました'
   end
 
   private
+
+  def set_father_pet
+    @father_pet = FatherPet.find(params[:id])
+  end
 
   def father_pet_params
     params.require(:father_pet).permit(:name, :color, :birthday, :image_path, :memo)
