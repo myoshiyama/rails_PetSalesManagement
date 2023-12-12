@@ -43,7 +43,7 @@ gem "devise", "~> 4.9.3"
 gem 'omniauth', "~> 2.1.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -53,6 +53,9 @@ gem "sassc-rails"
 
 # Bootstrap for styling
 gem "bootstrap", '~> 5.3.2'
+
+# Webpacker for managing JavaScript and CSS
+gem 'webpacker', '~> 5.0'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

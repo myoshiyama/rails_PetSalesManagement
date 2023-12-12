@@ -7,3 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 // Bootstrap JavaScript (Make sure to include Popper.js before Bootstrap's JavaScript)
 import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+// Rails UJS
+import Rails from "@rails/ujs";
+Rails.start();
